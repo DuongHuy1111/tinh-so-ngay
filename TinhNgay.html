@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Duong Quang Huy</title>
+</head>
+<body>
+<input type="text" id="text">
+<button onclick="Click()">Tinh so ngay</button>
+<script>
+    function Click() {
+        let a = (document.getElementById("text").value);
+        switch (a) {
+            case '1' :
+            case '3' :
+            case '5' :
+            case '7' :
+            case '8' :
+            case '10':
+            case '12':
+                document.write('Thang ' + a + ' co 31 ngay');
+                break;
+            case '2' :
+                document.write('Thang 2 co 28 hoac 29 ngay');
+                break;
+            default :
+                document.write('Thang ' + a + ' co 30 ngay');
+                break;
+        }
+    }
+
+</script>
+</body>
+</html>
